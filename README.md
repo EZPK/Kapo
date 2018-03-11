@@ -1,0 +1,2 @@
+# KapoPHP
+Company management software

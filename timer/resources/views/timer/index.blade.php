@@ -69,7 +69,7 @@
             <div class="title m-b-md">
                 Timer <hr>
                 @foreach ($timers as $timer)
-                Titre: {{$timer->title}}<br>
+                    <a href="/timer/{{$timer->id}}"><li>{{$timer->title}}</li></a><br>
                 @endforeach
             </div>
         </div>

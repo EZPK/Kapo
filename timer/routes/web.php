@@ -17,5 +17,18 @@ Route::get('/', function () {
 
 
 Route::get('/timer', function () {
-    return view('Timer');
+
+
+    $timers = DB::table("timer")->latest()->get();
+
+    return view('timer.index', compact('timers'));
 });
+
+
+
+Route::get('/timer/{timer}', function ($id) {
+
+    $timers = DB::table("timer")->find($id);
+
+    return view('timer.show', compact('timers'));
+}); 

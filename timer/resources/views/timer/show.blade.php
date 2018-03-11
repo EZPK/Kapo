@@ -67,10 +67,8 @@
     <body>
         <div class="content">
             <div class="title m-b-md">
-                Timer <hr>
-                @foreach ($timers as $timer)
-                Titre: {{$timer->title}}<br>
-                @endforeach
+                
+                Title: {{$timers->title}}
             </div>
         </div>
     </body>
